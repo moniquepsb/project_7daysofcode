@@ -1,0 +1,335 @@
+:root {
+  --font-family: "Inter";
+  --primary-color: #667085;
+  --secondary-color: #8e2424;
+  --terciary-color: #101828;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter.ttf) format("truetype");
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* navbar */
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 120px;
+}
+
+.logo-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.logo-navbar .logo-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3a404e;
+  padding-left: 8px;
+}
+
+.menu-navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 230px;
+  cursor: pointer;
+}
+
+.menu-navbar span {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 32px;
+}
+
+.button-navbar button {
+  margin: 0 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-login {
+  color: var(--primary-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+}
+
+.btn-subscribe {
+  background-color: var(--secondary-color);
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  width: 112px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 96px 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.header-content .main-text {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header-content h1 {
+  color: var(--terciary-color);
+  font-size: 48px;
+  margin: 0;
+  font-weight: semi-bold;
+}
+
+.header-content .sec-text {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.metric-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.metric1 {
+  margin: 0;
+  height: 168px;
+  width: 280px;
+  padding-left: 32px;
+}
+
+.metric2,
+.metric3,
+.metric4 {
+  margin: 0;
+  height: 192px;
+  width: 280px;
+  padding-left: 32px;
+}
+
+.metric-title {
+  margin: 0;
+  padding-bottom: 12px;
+  color: var(--secondary-color);
+  font-size: 60px;
+  font-weight: semibold;
+}
+
+.metric-subtitle {
+  padding-bottom: 8px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--terciary-color);
+}
+
+.metric-text {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: regular;
+  margin: 0;
+}
+
+.hiring-talent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 192px 0 64px 0;
+}
+
+.vagas-abertas {
+  background-color: #f9f4f4;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  color: var(--secondary-color);
+  width: 125px;
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+.talent-title {
+  color: var(--terciary-color);
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.talent-subtitle {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.img-hiring {
+  margin-top: 64px;
+  width: 87vw;
+}
+
+.vaga {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 768px;
+}
+
+.vaga h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 64px 0 0 0;
+  color: var(--terciary-color);
+}
+
+.vaga .titulo-vaga {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--terciary-color);
+  margin-bottom: 32px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  margin: 24px auto;
+  border: 2px solid #eaecf0;
+  border-radius: 16px;
+  width: 768px;
+}
+
+.informacoes span {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 24px;
+}
+
+/*              */
+
+.depoimento-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 160px 0 0 0;
+  background-color: #fdf8f8;
+}
+
+.depoimento-content p {
+  margin: 64px 0 16px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.depoimento-content h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--terciary-color);
+  margin: 0 0 32px 0;
+}
+
+.dep-nome {
+  margin: 0 0 8px 0;
+  color: var(--terciary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dep-cargo {
+  margin: 0 0 64px 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+/* footer */
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 192px 0 96px 0;
+}
+
+.footer-content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--terciary-color);
+  margin: 0 0 20px 0;
+}
+
+.footer-content span {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin: 0 0 40px 0;
+}
+
+.footer-content input {
+  width: 360px;
+  height: 43px;
+  border: 1px solid #d0d5dd;
+  outline: none;
+  border-radius: 8px;
+}
+
+.footer-content input::placeholder {
+  padding: 12px;
+  font-size: 16px;
+  margin: 40px 0 0 0;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.footer-content p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 32px 0 0 0;
+  color: #98a2b3;
+}
+
+.btn-sub-email {
+  background-color: var(--secondary-color);
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  width: 116px;
+}
